@@ -1,0 +1,119 @@
+/*
+Theme Name: Honar Systems Sample Theme
+Theme URI: https://www.honarsystems.com/hs-sample
+Author: Honar Systems
+Author URI: https://www.honarsystems.com/
+Description: Honar Systems Sample is a free theme.
+Version: 1.0.0
+Tested up to: 5.8
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: hs-sample
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+== Copyright ==
+
+Honar Systems Sample WordPress Theme, 2022 WordPress.org
+Honar Systems Sample is distributed under the terms of the GNU GPL.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+*/
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.hs-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.hs-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hs-col-1 {
+    width: 8.333333%;
+}
+
+.hs-col-2 {
+    width: 16.666666%;
+}
+
+.hs-col-3 {
+    width: 25%;
+}
+
+.hs-col-7 {
+    width: 58.333333%;
+}
+
+@media (max-width: 1170px) {
+    .hs-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .hs-order-t-1{
+        order: 1;
+    }
+
+    .hs-order-t-2{
+        order: 2;
+    }
+
+    .hs-order-t-3{
+        order: 3;
+    }
+
+    .hs-col-t-6{
+        width: 50% !important;
+    }
+
+    .hs-col-t-12{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hs-container {
+        width: 100%;
+    }
+
+    .hs-col-m-12 {
+        width: 100% !important;
+    }
+
+    .hs-col-m-6 {
+        width: 50% !important;
+    }
+
+    .hs-justify-content-m-end {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.hss-site {
+    position: relative;
+}
